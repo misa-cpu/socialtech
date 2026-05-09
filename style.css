@@ -567,6 +567,7 @@ body {
    margin: 0;
  }
 
+
  /* プロダクトページ */
  .product-main-inner {
   background-image: url(./images/product/product-main.png);
@@ -653,6 +654,11 @@ body {
    font-size: 28px;
    margin: 0;
  }
+}
+
+#menu-sp {
+  display: none;
+}
 
 /*====================
 スマートフォン用のスタイル
@@ -671,6 +677,7 @@ body {
   padding: 0;
   border: none;
 }
+
 
 /* スマホ用ナビゲーションの表示切替*/
 /* 初期状態、レイアウトと非表示設定 */
@@ -718,8 +725,7 @@ body {
 }
 
 /* スマホ用ナビを非表示 */
-#nav-sp,
-#menu-sp {
+#nav-sp {
   display: none;
 }
 
