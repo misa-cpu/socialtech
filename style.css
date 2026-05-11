@@ -23,6 +23,10 @@ body {
  #nav-pc {
    font-size: 14px;
  }
+
+ #nav-sp {
+  display: none;
+ }
  
  #nav-pc ul {
    display: flex;
