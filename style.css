@@ -499,13 +499,95 @@ body {
    font-size: 16px;
  }
 
-/* 画面幅が767px以下のとき */
-@media screen and (max-width: 767px) {
-  /* スマートフォン用のスタイルを指定する */
-  /* PC用ナビゲーション非表示 */
-  #nav-pc {
-    display: none;
-}
+  /* プロダクトページ */
+ .product-main-inner {
+   background-image: url("./images/product/product-main.png");
+   background-repeat: no-repeat;
+   background-position-y: center;
+   height: 80%;
+   background-size: cover;
+ }
+ 
+ #product-title {
+   background-color: #2710d5;
+   width: 368px;
+   color: #ffffff;
+   height: 496px;
+   border-radius: 0 248px 248px 0;
+   position: relative;
+ }
+ 
+ #product-title h1 {
+   position: absolute;
+   top: 0;
+   left: 100px;
+   font-size: 80px;
+   line-height: 1;
+ }
+ 
+ #product-title h1 span {
+   font-size: 26px;
+ }
+ 
+ #product-title > p {
+   position: absolute;
+   top: 350px;
+   left: 100px;
+   font-size: 16px;
+ }
+
+ /* セクション */
+ .product-section {
+   display: flex;
+   padding: 20px 20px 0;
+ }
+ 
+ .product-section .product-section-img {
+   width: 450px;
+ }
+ 
+ /* 左が画像のセクション*/
+ .product-section-left .product-section-img img {
+   width: 100%;
+   padding: 0 40px 30px 0;
+   border-radius: 0 432px 0 0;
+ }
+ 
+ .product-section-left .product-read {
+   width: 50%;
+   flex-grow: 1;
+ }
+ 
+ .product-section-left .product-read p {
+   margin-bottom: 0;
+ }
+ 
+ /* 右が画像のセクション*/
+ .product-section-right {
+   justify-content: space-between;
+ }
+ 
+ .product-section-right .product-section-img img {
+   width: 100%;
+   padding: 0 0 30px 40px;
+   border-radius: 432px 0 0 0;
+ }
+ 
+ .product-section-right .product-read {
+   width: 500px;
+ }
+ 
+ .product-h2 {
+   color: #2710d5;
+   font-size: 24px;
+   margin: 0;
+ }
+ 
+ .product-h3 {
+   font-size: 28px;
+   margin: 0;
+ }
+
 
  /* ミッションページ　S2DGSの設定 */
  #mission-s2dgs {
@@ -572,94 +654,6 @@ body {
  }
 
 
- /* プロダクトページ */
- .product-main-inner {
-  background-image: url(./images/product/product-main.png);
-  background-repeat: no-repeat;
-  background-position-y: center;
- }
-
- #product-title {
-  background-color: #2710d5;
-  width: 368px;
-  color: #ffffff;
-  height: 496px;
-  border-radius: 0 248px 248px 0;
-  position: relative
- }
-
- #product-title h1 {
-  position: absolute;
-  top: 0;
-  left: 100px;
-  font-size: 80px;
-  line-height: 1;
- }
-
- #product-title h1 span {
-  font-size: 26px;
- }
-
- #product-title > p {
-  position: absolute;
-  top: 350px;
-  left: 100px;
-  font-size: 16px;
- }
-
-  /* セクション */
- .product-section {
-   display: flex;
-   padding: 20px 20px 0;
- }
- 
- .product-section .product-section-img {
-   width: 450px;
- }
- 
- /* 左が画像のセクション*/
- .product-section-left .product-section-img img {
-   width: 100%;
-   padding: 0 40px 30px 0;
-   border-radius: 0 432px 0 0;
- }
- 
- .product-section-left .product-read {
-   width: 50%;
-   flex-grow: 1;
- }
- 
- .product-section-left .product-read p {
-   margin-bottom: 0;
- }
- 
- /* 右が画像のセクション*/
- .product-section-right {
-   justify-content: space-between;
- }
- 
- .product-section-right .product-section-img img {
-   width: 100%;
-   padding: 0 0 30px 40px;
-   border-radius: 432px 0 0 0;
- }
- 
- .product-section-right .product-read {
-   width: 500px;
- }
- 
- .product-h2 {
-   color: #2710d5;
-   font-size: 24px;
-   margin: 0;
- }
- 
- .product-h3 {
-   font-size: 28px;
-   margin: 0;
- }
-}
-
 #menu-sp {
   display: none;
 }
@@ -670,6 +664,8 @@ body {
 @media screen and (max-width: 767px) {
   /* PC用ナビゲーション非表示 */
   #nav-pc {
+
+
     display: none;
   }
 
@@ -754,32 +750,32 @@ body {
 }
 
 /* メインビジュアル */
-  #main-visual {
-    position: relative;
-    height: 470px;
-  }
-
-  #main-visual > div {
-    text-align: center;
-    height: 280px;
-  }
-
-  #main-visual h1 {
-    font-size: 28px;
-    margin: 90px 0 0 0;
-  }
-
-  #main-visual > div > p {
-    margin: 0;
-    font-size: 15px;
-  }
-
-  #main-visual > img {
-    width: 100%;
-    border-radius: 476px 0 0 0;
-    top: auto;
-    bottom: 0;
-  }
+   #main-visual {
+     position: relative;
+     height: 470px;
+   }
+ 
+   #main-visual > div {
+     text-align: center;
+     height: 280px;
+   }
+ 
+   #main-visual h1 {
+     font-size: 28px;
+     margin: 90px 0 0 0;
+   }
+ 
+   #main-visual > div > p {
+     margin: 0;
+     font-size: 15px;
+   }
+ 
+   #main-visual > img {
+     width: 100%;
+     border-radius: 476px 0 0 0;
+     top: auto;
+     bottom: 0;
+   }
 
   /*見出し*/
   h2 {
@@ -802,8 +798,8 @@ body {
   }
 
   #mission-flex > div {
-  width: 100%;
-  margin: 0;
+    width: 100%;
+    margin: 0;
   }
 
   /* プロダクト */
@@ -982,39 +978,39 @@ body {
    }
 
 /* mission.html用スタイル */
-  /* ミッションのメインビジュアル */
-  #mission-main {
-    height: 256px;
-    margin-top: 4%;
-    position: relative;  
-  }
-
-  .mission-main-inner {
-    height: 80%;
-    background-size: cover;
-  }
-
-  .mission-title {
-    width: 136px;
-    height: 256px;
-    position: absolute;
-    top: -10%;
-  }
-
-  #mission-title h1 {
-    left: 20px;
-    font-size: 40px;
-  }
-
-  #mission-title h1 span {
-    font-size: 18px;
-  }
-
-  #mission-title > p {
-    top: 180px;
-    left: 20px;
-    font-size: 13px;
-  }
+   /* ミッションのメインビジュアル */
+   #mission-main {
+     height: 256px;
+     margin-top: 4%;
+     position: relative;
+   }
+ 
+   .mission-main-inner {
+     height: 80%;
+     background-size: cover;
+   }
+ 
+   #mission-title {
+     width: 136px;
+     height: 256px;
+     position: absolute;
+     top: -10%;
+   }
+ 
+   #mission-title h1 {
+     left: 20px;
+     font-size: 40px;
+   }
+ 
+   #mission-title h1 span {
+     font-size: 18px;
+   }
+ 
+   #mission-title > p {
+     top: 180px;
+     left: 20px;
+     font-size: 13px;
+   }
 
   /* ミッションページ　S2DGSの設定 */
   .mission-h2 {
@@ -1055,73 +1051,40 @@ body {
     align-self: center;
   }
 
-/* プロダクトページ */
-  #product-main {
-    height: 256px;
-    margin-top: 4%;
-    position: relative;
-  }
-
-  .product-main-inner {
-    height: 80%;
-    background-size: cover;
-  }
-
-  #product-title {
-    width: 136px;
-    height: 256px;
-    position: absolute;
-    top: -10%;
-  }
-  
-  #product-title h1 {
-    left: 20px;
-    font-size: 40px;
-  }
-
-  #product-title h1 span {
-    font-size: 18px;
-  }
-
-  #product-title > p {
-    top: 180px;
-    left: 20px;
-    font-size: 13px;
-  }
-
-   /* セクション */
-   .product-section {
-     flex-direction: column;
+   /* プロダクトページ */
+   #product-main {
+     height: 256px;
+     margin-top: 4%;
+     position: relative;
    }
  
-   .product-section .product-section-img {
-     width: 100%;
+   .product-main-inner {
+     height: 80%;
+     background-size: cover;
+   }
+ 
+   #product-title {
+     width: 136px;
+     height: 256px;
+     position: absolute;
+     top: -10%;
    }
    
-   .product-section .product-section-img img {
-     width: 100%;
-     padding: 0;
+   #product-title h1 {
+     left: 20px;
+     font-size: 40px;
    }
  
-   /* 左が画像のセクション*/
-   .product-section-left .product-section-img img {
-     border-radius: 0 300px 0 0;
+   #product-title h1 span {
+     font-size: 18px;
    }
  
-   .product-section-left .product-read {
-     width: 100%;
-     flex-grow: 1;
+   #product-title > p {
+     top: 180px;
+     left: 20px;
+     font-size: 13px;
    }
- 
-   /* 右が画像のセクション*/
-   .product-section-right .product-section-img img {
-     order: 1;
-     border-radius: 300px 0 0 0;
-   }
- 
-   .product-section-right .product-read {
-     order: 2;
-     width: 100%;
-   }  
+
+
 
 }
